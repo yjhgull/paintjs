@@ -1,13 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
     <title>PaintJS</title>
-</head>
-<body>
+  </head>
+  <body>
+    <canvas id="jsCanvas" class="canvas"></canvas>
+
+    <div class="controls">
+      <div class="consrols_range">
+        <input
+          type="range"
+          id="jsRange"
+          min="0.1"
+          max="5.0"
+          value="2.5"
+          step="0.1"
+        />
+      </div>
+
+      <div class="controls_btns">
+        <button id="jsMode">Fill</button>
+        <button id="jsSave">Save</button>
+      </div>
+
+      <div class="controls_colors" id="jsColors">
+        <div
+          class="controls_color jsColor"
+          style="background-color:rgb(255,255,255)"
+        ></div>
+        <div
+          class="controls_color jsColor"
+          style="background-color:rgb(0, 0, 0)"
+        ></div>
+        <div
+          class="controls_color jsColor"
+          style="background-color:rgb(255,59,48)"
+        ></div>
+        <div
+          class="controls_color jsColor"
+          style="background-color:rgb(255,149,0)"
+        ></div>
+        <div
+          class="controls_color jsColor"
+          style="background-color:rgb(255,204,0)"
+        ></div>
+        <div
+          class="controls_color jsColor"
+          style="background-color:rgb(76,217,100)"
+        ></div>
+        <div
+          class="controls_color jsColor"
+          style="background-color:rgb(90,200,250)"
+        ></div>
+        <div
+          class="controls_color jsColor"
+          style="background-color:rgb(0,122,255)"
+        ></div>
+        <div
+          class="controls_color jsColor"
+          style="background-color:rgb(88,86,214)"
+        ></div>
+      </div>
+    </div>
+
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
